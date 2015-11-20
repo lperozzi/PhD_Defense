@@ -1070,32 +1070,7 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'http://code.jquery.com/jquery-1.10.2.js'},
-					{ src: 'http://code.jquery.com/ui/1.11.4/jquery-ui.js',callback: function(){
-						$(function() {
-    					$( ".sortable" ).sortable();
-  					});
-					}},
-
-					// { src: 'jquery.js'},
-					{ src: 'plugin/lettering/jquery.lettering-0.6.1.min.js'},
-					{ src: 'plugin/textillate/jquery.textillate.js', async: true,callback: function(){
-						$(function () {
-    					$( ".tlt" ).textillate({
-								// enable looping
-  							loop: false,
-								// sets the initial delay before starting the animation
-								// (note that depending on the in effect you may need to manually apply
-								// visibility: hidden to the element before running this plugin)
-								initialDelay: 0,
-							});
-						})
-					}},
-					{src: 'vsp_edge.js',async:true},
-					{src: 'edge_includes/edge.6.0.0.min.js',async: true},
-
-					{ src: 'plugin/chartjs/Chart.min.js'},
-					{ src: 'plugin/chartjs/charted.js'}
+					{ src: 'http://code.jquery.com/jquery-1.10.2.js'}
 				]
 			});
 
